@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: 'Roboto', sans-serif;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.wrapper{
+  height: 100vh;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+.nav a{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  position: relative;
+  letter-spacing: 3px;
+}
+.nav a.active::before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.nav a::before{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover::before{
+  width: 100%;
+}
+[data-barba-namespace="home"] main{
+  margin-top: 200px;
+}
+
+.container{
+  /* padding: 20px 200px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.numbering{
+  margin-left: 50px;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+
+  color: rgba(0,0,0, 0.5);
+}
+.header{
+  margin-top: 5px;
+
+  font-size: 5rem;
+}
+.sub-header{
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+#element{
+  font-family: "oooh baby", sans-serif;
+}
+
+/* PAGE TRANSITION */
+
+.transition{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: #000;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+
+[data-barba-namespace="about"] h1,h2,h3,h4,h5,h6{
+  font-size: 1rem;
+}
+[data-barba-namespace="about"] main{
+  margin-top: 20px;
+}
+[data-barba-namespace="about"] .about-container {
+  margin-top: 100px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box {
+  display: block;
+  padding: 20px;
+  width: 30%;
+
+  height: 500px;
+}
+
+.img-box img{
+  height: 100%;
+  object-fit: contain; 
+  
+}
+
+[data-barba-namespace="about"] .details-container {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 30px;
+}
+
+.details-container h1{
+  font-size: 5rem;
+  font-family: 'Oooh baby', sans-serif;
+}
+.details-container h3{
+  font-size: 2rem;
+  color: rgba(0,0,0, 0.5);
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.details-container .footer{
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.details-container .body{
+  font-size: 1.3rem;
+}
+.details-container .footer i{
+  font-size: 2rem;
+  transition: all 0.3s ease;
+
+}
+
+.bi-facebook:hover{
+  color: #1772e8;
+  transform: translateY(-5px);
+}
+.bi-instagram:hover{
+  color: #4d5ac7;
+}
+.bi-github:hover{
+  color: #000;
+}
+.bi-envelope:hover{
+  color: #df594f;
+}
