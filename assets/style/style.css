@@ -182,6 +182,16 @@ a{
 }
 
 
+/* RESPONSIVENESS HOME */
+@media (max-width: 750px) {
+  .header{
+    font-size: 3rem;
+  }
+  .sub-header{
+    font-size: 1rem;
+  }
+
+}
 /* responsiveness */
 @media (max-width: 1330px) {
 
