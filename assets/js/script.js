@@ -28,14 +28,14 @@ function pageTransition() {
   let tl = gsap.timeline();
 
   tl.to(".transition", {
-    duration: 1,
+    duration: .5,
     scaleY: 1,
     transformOrigin: "bottom",
     ease: "power4.inOut",
   });
 
   tl.to(".transition", {
-    duration: 1,
+    duration: .5,
     scaleY: 0,
     transformOrigin: "top",
     ease: "power4.inOut",
