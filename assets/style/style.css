@@ -69,7 +69,11 @@ a{
   display: flex;
   flex-direction: column;
 }
-
+@media (max-width: 600px) {
+  .container{
+    margin-top: 100px !important;
+  }
+}
 .numbering{
   margin-left: 50px;
   margin-bottom: 5px;
